@@ -1,0 +1,80 @@
+html,body{
+    height: 100%;
+}
+body{
+    background-color: rgb(39, 38, 38);
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container{
+    height: auto;
+    color:white;
+    padding: 1rem;
+    margin: 20px; 
+    font-family: sans-serif;
+}
+.container{
+    padding:  0rem 1rem;
+}
+
+.container-center{
+    max-width: 600px;
+    margin: auto;
+}
+
+input{
+    padding: 0.5rem;
+    margin: 1rem;
+    max-width: 5rem;
+    background-color: #fffdf0;
+}
+
+button{
+    padding: 0.5rem;
+    width: 100px;
+    height: 50px;
+    font-size: large;
+}
+
+hr{
+    margin: 2rem;
+}
+h1{
+    background-color: rgb(46, 86, 104);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #fffdf0;
+    border-bottom-left-radius: 1rem;
+    padding-inline-start: 0;
+}
+.footer{
+   
+    background-color: rgb(46, 86, 104);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #fffdf0;
+    border-top-right-radius: 1rem;
+    position: sticky;
+    bottom: auto;
+    
+}
+
+.footer .link{
+    color: rgb(228, 151, 164);
+    font-family: sans-serif;
+}
+
+.footer .footer-header{
+    font-weight: bold; 
+    font-size: large;
+    padding: 1rem;
+ }
+li{
+    list-style: none;
+    padding: 1rem;
+    float: right;
+    display: inline-flex;
+}
