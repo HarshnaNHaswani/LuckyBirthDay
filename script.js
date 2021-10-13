@@ -6,9 +6,15 @@ const outputDiv = document.querySelector("#div-output");
 function buttonClickListener(){
   const dob = dateOfBirth.value;
   const lucky = luckyNumber.value;
+  
   if(lucky && dob){
-    const sum = calculateSum(dob);
-    checkLucky(sum, lucky)
+    if(lucky === 0){
+      outputDiv.innerText="Oops! Your birthday is not compatible with your lucky number!";
+    }else{
+      const sum = calculateSum(dob);
+      let res = checkLucky(sum, lucky);
+      outputDiv.innerText=`${res[0]}Your birthday ${res[1]} compatible with your lucky number!`
+    }
   }
   else outputDiv.innerText="Please choose value for both the fields";
 }
@@ -24,9 +30,9 @@ function calculateSum(dob) {
 
 function checkLucky(sum, luckyNumber){
     if(sum % luckyNumber === 0){
-      outputDiv.innerText="Your birthday is lucky!!";
+      return ["Yayy!!", "is"];
     }else {
-      outputDiv.innerText="Your birthday is not lucky!";
+       return ["Oops!", "is not"];
     }
   } 
 btnFind.addEventListener('click', buttonClickListener)
